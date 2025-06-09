@@ -1,0 +1,82 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.input-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+#NameInput {
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+#submit-btn{
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+#OutputContainer{
+  width: 90%;
+  height: 80vh;
+  margin-top: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
