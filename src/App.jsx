@@ -1,5 +1,6 @@
 import {useState} from "react";
 import validateName from "./utils/validateName";
+import nameToNumber from "./utils/nameToNumber";
 import './App.css'
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
     let result = validateName(name)
     if (result.valid){
       setError('')
-      setResult("result passwed")
+      setResult(nameToNumber(name))
       console.log("Valid Name: ", name)
+      console.log("number = ",nameToNumber(name));
     }
     else{
       setError(result.error)
