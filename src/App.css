@@ -80,3 +80,8 @@ html, body{
   border: 2px solid white;
   border-radius: 5px;
 }
+
+.nameNumberImage{
+  height: 100%;
+  width: 100%;
+}

@@ -50,7 +50,7 @@ function App() {
 
       <div id="OutputContainer">
         {(error != '') && error}
-        {(result != '') && result}
+        {(result != '') && (<img src={`../src/assets/nameNumber${result}.png`} className="nameNumberImage" alt="nameNumberImageDetails"/>) }
       </div>
       
     </>
