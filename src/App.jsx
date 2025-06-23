@@ -8,6 +8,7 @@ function App() {
   const [name, setName] = useState('');
   const [result, setResult] = useState('');
   const [error, setError] = useState('');
+  const imgLink = `../src/assets/nameNumber${result}.png`;
 
   const handleNameChange = (e) =>{
     let newName = e.target.value
@@ -50,7 +51,7 @@ function App() {
 
       <div id="OutputContainer">
         {(error != '') && error}
-        {(result != '') && (<img src={`../src/assets/nameNumber${result}.png`} className="nameNumberImage" alt="nameNumberImageDetails"/>) }
+        {(result != '') && (<img src={imgLink} className="nameNumberImage" alt="nameNumberImageDetails"/>) }
       </div>
       
     </>
