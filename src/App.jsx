@@ -8,7 +8,7 @@ function App() {
   const [name, setName] = useState('');
   const [result, setResult] = useState('');
   const [error, setError] = useState('');
-  const imgLink = `../src/assets/nameNumber${result}.png`;
+  const imgLink = `../yourname-numerology-app/src/assets/nameNumber${result}.png`;
 
   const handleNameChange = (e) =>{
     let newName = e.target.value
