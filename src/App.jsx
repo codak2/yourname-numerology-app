@@ -17,17 +17,17 @@ function App() {
   }
   
   const handleSubmitbtn = () =>{
-    let result = validateName(name)
-    if (result.valid){
-      setError('')
-      setResult(nameToNumber(name))
+    let validateNameResult = validateName(name)
+    if (validateNameResult.valid){
+      console.log("Result: ", validateNameResult.valid)
       console.log("Valid Name: ", name)
-      console.log("number = ",nameToNumber(name));
+      setResult(nameToNumber(name))
+      setError('')
     }
     else{
-      setError(result.error)
+      setError(validateNameResult.error)
       setResult('')
-      console.error("Invalid name:", result.error);
+      console.error("Invalid name:", validateNameResult.error);
     }
   }
 
