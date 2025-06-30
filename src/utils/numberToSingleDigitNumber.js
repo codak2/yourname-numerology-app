@@ -1,18 +1,15 @@
 const numberToSingleDigitNumber = (num) =>{
 
-    let tempNum = num;
     let sum = 0;
-
-    if ((num > 9) && (tempNum == num)){
-        while(tempNum>0){
-            sum += tempNum % 10;
-            tempNum = Math.floor(tempNum / 10);
-        }
+    while (num > 0) {
+        sum += num % 10;
+        num = Math.floor(num / 10);
     }
 
-    if(sum>9){
-        numberToSingleDigitNumber(sum)
+    if (sum > 9){
+        return numberToSingleDigitNumber(sum) 
     }else{
+        console.log("Result number: ", sum)
         return sum;
     }
 }
